@@ -1,0 +1,44 @@
+[System]
+# 应用名称
+AppName = "Mario-Dev"
+# 应用运行模式 dev test release
+RunMode = "dev"
+# 运行端口号
+Port = "8888"
+
+[Log]
+
+    [Log.PanicLog]
+    # 选择使用的日志类型
+    # rotatelogs 默认切割文件方式为每小时切割一个文件
+    LogType = "rotatelogs"
+
+        [Log.PanicLog.Config]
+        # 日志文件路径及文件名
+        Filename = "./log/panic.log"
+        # 文件最大保留的天数（单位：天）
+        MaxSaveDayNum = 30
+
+    [Log.InfoLog]
+    # 选择使用的日志类型
+    LogType = "rotatelogs"
+
+        [Log.InfoLog.Config]
+        # 日志文件路径及文件名
+        Filename = "./log/info.log"
+        # 文件最大保留的天数（单位：天）
+        MaxSaveDayNum = 30
+        # [Zap 参数]Encoder类型 JSONEncoder ConsoleEncoder
+        EncoderType = "ConsoleEncoder"
+
+    [Log.ErrorLog]
+    # 选择使用的日志类型
+    LogType = "rotatelogs"
+
+        [Log.ErrorLog.Config]
+        # 日志文件路径及文件名
+        Filename = "./log/error.log"
+        # 文件最大保留的天数（单位：天）
+        MaxSaveDayNum = 30
+        # [Zap 参数]Encoder类型 JSONEncoder ConsoleEncoder
+        EncoderType = "ConsoleEncoder"

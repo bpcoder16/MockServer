@@ -1,0 +1,19 @@
+[[8089]]
+uri = "test"
+method = "GET"
+response = "{\"status\": 1,\"msg\": \"success\"}"
+
+[[8089]]
+uri = "test1"
+method = "POST"
+response = "{\n    \"status\": 0,\n    \"msg\": \"\",\n    \"data\": {\n        \"total_num\": 5,\n        \"course_list\": [\n            {\n                \"id\": 5,\n                \"time\": 1630320814\n            },\n            {\n                \"id\": 4,\n                \"time\": 1630320811\n            },\n            {\n                \"id\": 3,\n                \"time\": 1630320808\n            },\n            {\n                \"id\": 2,\n                \"time\": 1630320804\n            },\n            {\n                \"id\": 1,\n                \"time\": 1629796009\n            }\n        ]\n    }\n}"
+
+[[8090]]
+uri = "test"
+method = "GET"
+response = "{\"status\": 0,\"msg\": \"success\"}"
+
+[[8090]]
+uri = "test1"
+method = "POST"
+response = "{\n    \"status\": 1,\n    \"msg\": \"\",\n    \"data\": {\n        \"total_num\": 5,\n        \"course_list\": [\n            {\n                \"id\": 5,\n                \"time\": 1630320814\n            },\n            {\n                \"id\": 4,\n                \"time\": 1630320811\n            },\n            {\n                \"id\": 3,\n                \"time\": 1630320808\n            },\n            {\n                \"id\": 2,\n                \"time\": 1630320804\n            },\n            {\n                \"id\": 1,\n                \"time\": 1629796009\n            }\n        ]\n    }\n}"
